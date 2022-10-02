@@ -24,6 +24,10 @@ setInterval(async () => {
       )
     );
   } catch (error) {
-    console.error(error);
+    const now = new Date();
+
+    console.log(
+      `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()} - ERROR - Tentanto Atualizar...`
+    );
   }
 }, 5 * 1000);
